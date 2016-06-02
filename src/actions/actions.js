@@ -1,16 +1,16 @@
 const idTimestamp = () => {return new Date().getTime();}
 
-function addMovie (text) {
-	return {
-		type: 'ADD_MOVIE',
-		payload: {
-			id: idTimestamp(),
-			text: text
-		}
-	};
-}
+// function addMovie (text) {
+// 	return {
+// 		type: 'ADD_MOVIE',
+// 		payload: {
+// 			id: idTimestamp(),
+// 			text: text
+// 		}
+// 	};
+// }
 
-export default addMovie();
+// export default addMovie();
 
 
 
