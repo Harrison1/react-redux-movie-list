@@ -13,7 +13,6 @@ function addMovie (text) {
 export default addMovie();
 
 
-
 // export function addTodo(text) {
 //   return {
 //     type: 'ADD_TODO',

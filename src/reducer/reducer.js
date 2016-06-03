@@ -1,4 +1,4 @@
-import { createStore } from 'redux';
+// import { createStore } from 'redux';
 
 const movieList = (state = 0, action) => {
   switch (action.type) {
@@ -9,14 +9,7 @@ const movieList = (state = 0, action) => {
   }
 }
 
-//export default movieList();
-
-const store = createStore(movieList);
-
-console.log(store.getState());
-store.dispatch({ type: 'ADD_MOVIE' });
-console.log(store.getState());
-
+export default movieList;
 
 
 
