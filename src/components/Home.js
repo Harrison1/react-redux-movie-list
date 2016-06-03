@@ -1,20 +1,12 @@
 import React from 'react';
-import { createStore } from 'redux';
-import movieList from '../reducer/reducer';
+// import { createStore } from 'redux';
+// import movieList from '../reducer/reducer';
 
-const store = createStore(movieList);
+// const store = createStore(movieList);
 
 // console.log(store.getState());
 // store.dispatch({ type: 'ADD_MOVIE' });
 // console.log(store.getState());
-
-store.subscribe(() => {
-	document.getElementById('num').innerText = store.getState();
-});
-
-document.addEventListener('click', () => {
-	store.dispatch({ type: 'ADD_MOVIE' });
-});
 
 // document.getElementById('countme').addEventListener('click', () => {
 // 	store.dispatch({ type: 'ADD_MOVIE' });
@@ -32,6 +24,14 @@ class Home extends React.Component {
     );
   }
 }
+
+// store.subscribe(() => {
+// 	document.getElementById('num').innerText = store.getState();
+// });
+
+// document.addEventListener('click', () => {
+// 	store.dispatch({ type: 'ADD_MOVIE' });
+// });
 
 
 export default Home;
