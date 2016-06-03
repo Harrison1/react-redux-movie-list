@@ -24,9 +24,10 @@ class Home extends React.Component {
   render() {
     return (
     	<div>
-        <h1>Hello World</h1>
-        <h2 id='num'>0</h2>
-        <button id='countme'>COUNT</button>
+	        <h1>Hello Moto</h1>
+	        <h2 id='num'>{value}}</h2>
+	        <button onClick={onIncrement}>UP</button>
+	        <button onClick={onDecrement}>DOWN</button>
         </div>
     );
   }
