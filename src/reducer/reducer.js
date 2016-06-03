@@ -3,9 +3,11 @@
 const movieList = (state = 0, action) => {
   switch (action.type) {
     case 'ADD_MOVIE':
-      return state + 1;
+    	return state + 1;
+    case 'DELETE_MOVIE':
+    	return state - 1;  
     default:
-      return state;
+    	return state;
   }
 }
 
